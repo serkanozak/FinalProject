@@ -17,5 +17,5 @@ namespace Entities.Concrete
     }
 
     // public yapmamızın sebebi, diğer katmanların bu class'a ulaşabilmesini sağlamak.
-    // DataAccess ürünü ekleyecek. Business kontrol edecek. ConsoleUI gösterecek.
+    // DataAccess ürünü ekleyecek. Business kontrol edecek. ConsoleUI gösterecek. 
 }

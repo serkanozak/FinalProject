@@ -12,6 +12,8 @@ namespace Business.Concrete
 {
     public class ProductManager : IProductService
     {
+        //Bir iş sınıfı başka sınıfları new'lemez. Bunun yerine injection yapılır.
+
         IProductDal _productDal;
 
         public ProductManager(IProductDal productDal)

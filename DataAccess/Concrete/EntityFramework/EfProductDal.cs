@@ -34,6 +34,16 @@ namespace DataAccess.Concrete.EntityFramework
             }
         }
 
+        public void Update(Product entity)
+        {
+            using (NorthwindContext context = new NorthwindContext())
+            {
+                var updatedEntity = context.Entry(entity);
+                updatedEntity.State = EntityState.Modified;
+                context.SaveChanges();
+            }
+        }
+
         public Product Get(Expression<Func<Product, bool>> filter)
         {
             using (NorthwindContext context = new NorthwindContext())
@@ -50,14 +60,6 @@ namespace DataAccess.Concrete.EntityFramework
             }
         }
 
-        public void Update(Product entity)
-        {
-            using (NorthwindContext context = new NorthwindContext())
-            {
-                var updatedEntity = context.Entry(entity);
-                updatedEntity.State = EntityState.Modified;
-                context.SaveChanges();
-            }
-        }
+        
     }
 }

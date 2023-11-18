@@ -8,7 +8,7 @@ using Entities.Abstract;
 namespace Entities.Concrete
 {
 
-    //çıplak class kalmasın
+    //çıplak class kalmasın!!
     public class Category : IEntity
     {
         public int CategoryId { get; set; }

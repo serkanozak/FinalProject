@@ -15,7 +15,7 @@ namespace DataAccess.Concrete.InMemory
         public InMemoryProductDal()
         {
             //Sanki Oracle, SQL Server, PostgreSQL, MongoDB'den veri geliyormuş gibi simüle ediyoruz.
-            _products = new List<Product>() { 
+            _products = new List<Product>() {
                 new Product{ProductId=1, CategoryId=1, ProductName="Bardak", UnitPrice=15, UnitsInStock=15},
                 new Product{ProductId=2, CategoryId=1, ProductName="Kamera", UnitPrice=500, UnitsInStock=3},
                 new Product{ProductId=3, CategoryId=2, ProductName="Telefon", UnitPrice=1500, UnitsInStock=12},
@@ -42,10 +42,10 @@ namespace DataAccess.Concrete.InMemory
             //    }
             //}
 
-            Product productToDelete = _products.SingleOrDefault(p=>p.ProductId == product.ProductId); // foreach gibi çalışır.
+            Product productToDelete = _products.SingleOrDefault(p => p.ProductId == product.ProductId); // foreach gibi çalışır.
 
 
-            _products.Remove(productToDelete); 
+            _products.Remove(productToDelete);
         }
 
         public List<Product> GetAll()
