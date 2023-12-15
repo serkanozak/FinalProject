@@ -14,5 +14,8 @@ namespace Business.Constants
         public static string MaintenanceTime = "Sistem bakımda";
         public static string ProductsListed = "Ürünler listelendi";
         internal static string UnitPriveInvalid;
+        internal static string ProductCountOfCategoryError;
+        internal static string ProductNameAlreadyExists;
+        internal static string CategoryLimitExceded;
     }
 }
